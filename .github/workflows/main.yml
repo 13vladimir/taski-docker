@@ -75,7 +75,6 @@ jobs:
       run: |
         cd frontend/
         npm run test
-  
   build_frontend_and_push_to_docker_hub:
     name: Push frontend Docker image to DockerHub
     runs-on: ubuntu-latest
@@ -116,4 +115,4 @@ jobs:
           context: ./gateway/
           push: true
           # Тут вместо username должен быть ваш логин на Docker Hub
-          tags: 13vladim/taski_gateway:latest 
+          tags: 13vladim/taski_gateway:latest
